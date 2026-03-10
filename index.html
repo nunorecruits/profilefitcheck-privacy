@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfileFitCheck — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f9f9fb;
+      padding: 48px 16px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e5e5ec;
+      border-radius: 10px;
+      padding: 48px 52px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+    .brand-badge {
+      width: 32px; height: 32px;
+      background: #0a0a0d;
+      border: 1.5px solid #00e5a0;
+      border-radius: 5px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: #00e5a0;
+      letter-spacing: 0.5px;
+      font-family: monospace;
+    }
+    .brand-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0a0a0d;
+      letter-spacing: -0.2px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0a0a0d;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+    .effective {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a0a0d;
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 12px; color: #333; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: #333; }
+    .highlight {
+      background: #f0fdf8;
+      border-left: 3px solid #00e5a0;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #1a4a3a;
+    }
+    .contact {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5ec;
+      font-size: 13px;
+      color: #888;
+    }
+    .contact a { color: #00b37a; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .container { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="brand">
+      <div class="brand-badge">PF</div>
+      <span class="brand-name">ProfileFitCheck</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: 10 March 2026 &nbsp;·&nbsp; Published by Nuno Lopes</p>
+
+    <div class="highlight">
+      ProfileFitCheck does not collect, store, transmit, or sell any personal data. All processing happens locally in your browser or via direct API calls you control.
+    </div>
+
+    <h2>1. What This Extension Does</h2>
+    <p>ProfileFitCheck is a Chrome extension that helps recruiters evaluate candidate profiles on LinkedIn. It reads the visible text of the LinkedIn profile you are currently viewing, sends that text to Google's Gemini API (using your own API key), and displays the AI-generated analysis in the extension side panel.</p>
+
+    <h2>2. Data We Collect</h2>
+    <p>We do not collect any data. Specifically:</p>
+    <ul>
+      <li>No personal data is collected, stored, or transmitted to any server operated by ProfileFitCheck or Nuno Lopes.</li>
+      <li>No analytics, telemetry, crash reports, or usage statistics are gathered.</li>
+      <li>No account or registration is required.</li>
+    </ul>
+
+    <h2>3. Data Processed Locally</h2>
+    <p>The following data is processed entirely within your browser and is never sent to us:</p>
+    <ul>
+      <li><strong>Your Gemini API key</strong> — stored locally using Chrome's <code>chrome.storage.local</code> API. It never leaves your device except in direct API calls to Google's Gemini API, which you initiate.</li>
+      <li><strong>Role / ICP profiles you create</strong> — stored locally in <code>chrome.storage.local</code>. Never transmitted anywhere.</li>
+      <li><strong>Candidate scoring history and notes</strong> — stored locally in <code>chrome.storage.local</code>. Never transmitted anywhere.</li>
+    </ul>
+
+    <h2>4. Data Sent to Third Parties</h2>
+    <p>When you click "Score Full Profile" or "Scan Companies", the extension sends the visible text of the LinkedIn profile you are viewing — along with your role ICP criteria — to the <strong>Google Gemini API</strong> using your own API key. This is a direct call from your browser to Google's API.</p>
+    <p>This data transfer is:</p>
+    <ul>
+      <li>Initiated only when you explicitly trigger an analysis action.</li>
+      <li>Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a>.</li>
+      <li>Subject to the data retention policies of Google, not ProfileFitCheck.</li>
+    </ul>
+    <p>We recommend reviewing Google's API data usage policies before use, particularly regarding whether API inputs are used for model training.</p>
+
+    <h2>5. LinkedIn Data</h2>
+    <p>The extension reads the visible text content of LinkedIn profile pages you navigate to. This data is used solely to generate the analysis you requested. It is not stored beyond your local browser session history (which you can clear at any time) and is not transmitted to any party other than the Google Gemini API as described above.</p>
+    <p>Use of this extension in relation to LinkedIn data is your responsibility. Please ensure your use complies with LinkedIn's <a href="https://www.linkedin.com/legal/user-agreement" target="_blank" rel="noopener">User Agreement</a> and applicable data protection laws including GDPR.</p>
+
+    <h2>6. Permissions Used</h2>
+    <p>The extension requests the following Chrome permissions, each with a specific and limited purpose:</p>
+    <ul>
+      <li><strong>activeTab</strong> — to read the visible text of the LinkedIn profile tab you are currently viewing.</li>
+      <li><strong>scripting</strong> — to inject a content script that extracts profile text from the page.</li>
+      <li><strong>storage</strong> — to save your API key, role profiles, scoring history, and notes locally on your device.</li>
+      <li><strong>sidePanel</strong> — to display the extension interface in Chrome's side panel.</li>
+      <li><strong>tabs</strong> — to detect when you navigate to a LinkedIn profile page so the extension can update automatically.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>This extension is intended for professional use by recruiters and talent acquisition professionals. It is not directed at children under the age of 13, and we do not knowingly process data relating to children.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If this policy is updated, the effective date at the top of this page will be revised. Continued use of the extension after any changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>For any questions about this privacy policy, please contact:</p>
+
+    <div class="contact">
+      <strong>Nuno Lopes</strong><br>
+      GitHub: <a href="https://github.com/nunorecruits" target="_blank" rel="noopener">github.com/nunorecruits</a>
+    </div>
+
+  </div>
+</body>
+</html>
